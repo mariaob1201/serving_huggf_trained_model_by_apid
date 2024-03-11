@@ -1,6 +1,8 @@
 # FastAPI Sentiment Analysis API
 
-Text Data Analysis of sentiments by calling hugging face api and serving it as API
+Try out this text Data Analysis of sentiments. The model served here by API does a call to hugging face transformers
+"sentiment-analysis" and "bertweet-base-sentiment-analysis". The code here is to build a local API using docker, the image setup is as Dockerfile
+
 ![API call](local_excecution.png)
 
 ## Getting Started
@@ -16,4 +18,3 @@ Text Data Analysis of sentiments by calling hugging face api and serving it as A
 
 ```bash
 git clone https://github.com/mariaob1201/serving_huggf_trained_model_by_apid.git
-cd your-fastapi-sentiment-analysis
