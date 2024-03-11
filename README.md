@@ -1,6 +1,6 @@
 # FastAPI Sentiment Analysis API
 
-This is a simple FastAPI application that provides a sentiment analysis API using the Hugging Face Transformers library.
+Text Data Analysis of sentiments by calling hugging face api and serving it as API
 ![Example Image](local_excecution.png)
 
 ## Getting Started
