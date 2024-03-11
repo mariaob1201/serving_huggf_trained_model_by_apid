@@ -2,10 +2,9 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 from transformers import pipeline
 
-
-#model_id = "cardiffnlp/twitter-roberta-base-sentiment-latest"
-
-sentiment_pipeline = pipeline("sentiment-analysis")#, model=model_id)
+model1 = "sentiment-analysis"
+model2 = "bertweet-base-sentiment-analysis"
+sentiment_pipeline = pipeline(model1)
 
 app = FastAPI()
 
@@ -17,12 +16,13 @@ class RequestModel(BaseModel):
     input_string: str
 
 @app.post("/analyze")
-def your_function(request: RequestModel):
+def f(request: RequestModel):
 
     input_string = request.input_string
 
     sentiment = sentiment_pipeline(input_string)
     return {"result":
-            {"sentiment" : sentiment[0]["label"],
-             "score" : sentiment[0]["score"]}
-             }
+                {"sentiment": sentiment[0]["label"],
+                 "score": sentiment[0]["score"]
+                 }
+            }
