@@ -1,7 +1,7 @@
 # FastAPI Sentiment Analysis API
 
 Text Data Analysis of sentiments by calling hugging face api and serving it as API
-![Example Image](local_excecution.png)
+![API call](local_excecution.png)
 
 ## Getting Started
 
@@ -15,5 +15,5 @@ Text Data Analysis of sentiments by calling hugging face api and serving it as A
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/your-fastapi-sentiment-analysis.git
+git clone https://github.com/mariaob1201/serving_huggf_trained_model_by_apid.git
 cd your-fastapi-sentiment-analysis
