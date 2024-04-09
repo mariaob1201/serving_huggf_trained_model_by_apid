@@ -3,3 +3,4 @@
 
 # Ignore venv directory created by virtual environments
 venv/
+src/__pycache__
